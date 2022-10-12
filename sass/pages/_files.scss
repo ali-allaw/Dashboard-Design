@@ -1,0 +1,169 @@
+$green-color: #22c55e;
+$red-color: #f44336;
+$blue-color: #0075ff;
+$yellow-color: #f59e0b;
+
+.files {
+    @extend %eachSection;
+    input:focus {
+        outline: none;
+    }
+    p {
+        color: #777;
+    }
+    .title {
+        h3 {
+            font-weight: bold;
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+.files {
+    .cards {
+        .card {
+            position: relative;
+            padding-bottom: 0px !important;
+            .card-head {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .head-icon {
+                    position: absolute;
+                    top: 10px;
+                    left: 15px;
+                    i {
+                        color: $text-color !important;
+                        font-size: 25px;
+                    }
+                }
+                .head-details{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-top: 15px;
+                    row-gap: 20px;
+                    img {
+                        width: 90px;
+                    }
+                    p {
+                        color: black !important;
+                        font-size:22px;
+                    }
+                }
+            }
+            .card-body {
+                padding: 0px !important;
+                border-bottom: 1px solid #eee;
+                p {
+                    font-size: 18px;
+                }
+            }
+            .card-foot {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px !important;
+                margin: 0px !important;
+                padding-top: 15px !important;
+                padding-bottom: 15px !important;
+                p {
+                    padding: 0px !important;
+                    margin: 0px !important;
+                }
+            }
+        }
+        .card-right {
+            padding-bottom: 25px !important;
+            .boxes {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 20px;
+                .box {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    border: 1px solid #eee;
+                    border-radius: 6px;
+                    padding: 10px 15px !important;
+                    position: relative;
+                    width: 100%;
+                    column-gap: 20px;
+                    &:first-child {
+                        i {
+                            background-color: #cce3ff;
+                            color: $blue-color;
+                        }
+                    }
+                    &:nth-child(2) {
+                        i {
+                            background-color: #D2F4DF;
+                            color: $green-color;
+                        }
+                    }
+                    &:nth-child(3) {
+                        i {
+                            background-color: #FDD9D6;
+                            color: $red-color;
+                        }
+                    }
+                    &:nth-child(4) {
+                        i {
+                            background-color: #FDECCE;
+                            color: $yellow-color;
+                        }
+                    }
+                    &::after {
+                        content: "6.5GB";
+                        position: absolute;
+                        right: 10px;
+                        top: 30%;
+                        color: $text-color;
+                        font-size: 18px;
+                    }
+                    i {
+                        font-size: 22px;
+                        padding: 10px 15px;
+                    }
+                    .details {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        row-gap: 5px;
+                        p {
+                            padding: 0px !important;
+                            margin: 0px !important;
+                            &:first-of-type {
+                                color: black !important;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            button {
+                width: fit-content;
+                margin: auto;
+                padding-left: 45px !important;
+                padding: 10px;
+                font-size: 20px;
+                position: relative;
+                border-radius: 8px !important;
+                i {
+                    position: absolute;
+                    color: white;
+                    left: 15px;
+                }
+            }
+        }
+    }
+    
+}

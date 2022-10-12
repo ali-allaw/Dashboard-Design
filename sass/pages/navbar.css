@@ -1,0 +1,48 @@
+.navbar .left {
+  position: relative;
+}
+.navbar .left i {
+  top: 50%;
+  left: 15px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #777;
+}
+.navbar input {
+  border-radius: 10px;
+  caret-color: #777;
+  border: 1px solid #ccc;
+}
+.navbar input::-moz-placeholder {
+  color: #777;
+}
+.navbar input:-ms-input-placeholder {
+  color: #777;
+}
+.navbar input::placeholder {
+  color: #777;
+}
+.navbar input:focus {
+  outline: none;
+}
+.navbar .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .right img {
+  width: 40px;
+}
+.navbar .right i {
+  font-size: 20px;
+}
+.navbar .right i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #e44127;
+  border-radius: 50%;
+  top: 0px;
+  right: -5px;
+}/*# sourceMappingURL=navbar.css.map */

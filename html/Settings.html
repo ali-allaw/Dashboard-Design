@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- link css file -->
+    <link rel="stylesheet" href="/sass/main.css">
+    <!-- get bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- get bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <!-- Start navbar -->
+    <div class="navbar ">
+        <div class="container-fluid">
+            <div class="left">
+                <i class="bi bi-search"></i>
+                <input class="py-2 px-4 border border-secondary" type="text" placeholder="Type A Keyword" aria-label="Type A Keyword">
+            </div>
+            <div class="right gap-3">
+                <i class="bi bi-bell position-relative"></i>
+                <img src="/imgs/avatar.png" alt="">
+            </div>
+            <!-- -->
+        </div>
+    </div>
+    <!-- End navbar -->
+
+    <!-- Start offcanvas -->
+    <div class="offcanva position-fixed top-0 d-flex justify-content-start align-items-center flex-column pt-5 shadow p-3 mb-5 bg-body">
+        <div class="title">
+            <h2 class="h2 fw-bold">Elzero</h2>
+            <span></span>
+        </div>
+        <ul class="mt-5 list-unstyled d-flex flex-column gap-3">
+            <li class=""><i class="bi bi-bar-chart-steps"></i><a href="Dashboard.html">Dashboard</a></li>
+            <li class="active"><i class="bi bi-gear-fill"></i><a href="Settings.html">Settings</a></li>
+            <li class=""><i class="bi bi-person"></i><a href="Profile.html">Profile</a></li>
+            <li class=""><i class="bi bi-share-fill"></i><a href="Projects.html">Projects</a></li>
+            <li class=""><i class="bi bi-award-fill"></i><a href="Courses.html">Courses</a></li>
+            <li class=""><i class="bi bi-person-circle"></i><a href="Friends.html">Friends</a></li>
+            <li class=""><i class="bi bi-file-earmark"></i><a href="Files.html">Files</a></li>
+            <li class=""><i class="bi bi-credit-card"></i><a href="Plans.html">Plans</a></li>
+        </ul>
+    </div>
+    <!-- End offcanvas -->
+
+    <!-- Start Settings -->
+    <div class="settings pt-3 pb-3" id="settings">
+        <div class="container-fluid">
+            <div class="designed-title">
+                <h2 class="designed-h2">Settings</h2>
+                <span></span>
+            </div>
+
+            <!-- Start First Row -->
+            <div class="cards-1 row ">
+
+                <!-- Start Site Control Card -->
+                <div class="col-6">
+                    <div class="card card-1 mt-4 p-4">
+                        <div class="title">
+                            <h3>Site Control</h3>
+                            <p>Control The Website If There's Maintenance</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="details">
+                                <h4>Website Control</h4>
+                                <p>Open/Close Website And Type The Reason</p>
+                            </div>
+                            <button class="btn designed-btn" type="submit"><span></span><i class="bi bi-bag-x"></i><i class="bi bi-check"></i></button>
+                        </div>
+                        <input type="text" placeholder="Close Message Content">
+                    </div>
+                </div>
+                <!-- End Site Control Card -->
+                
+                <!-- Start General Info Card -->
+                <div class="col-6">
+                    <div class="card card-2 mt-4 p-4">
+                        <div class="title">
+                            <h3>General Info</h3>
+                            <p>General Information About Your Acccount</p>
+                        </div>
+                        <form action="">
+                            <div class="box box-1">
+                                <label for="name">First Name</label>
+                                <input type="text" id="name" name="name" placeholder="First Name">
+                            </div>
+                            <div class="box box-2">
+                                <label for="name">Last Name</label>
+                                <input type="text" id="name" name="name" placeholder="Last Name">
+                            </div>
+                            <div class="box box-3">
+                                <div class="email">
+                                    <label for="name">Email</label>
+                                <input type="text" id="name" name="name" placeholder="o@nn.sa" readonly>
+                                </div>                            
+                                <a href="">Change</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End General Info Card -->
+
+            </div>
+            <!-- End First Row -->
+
+            <!-- Start Second Row -->
+            <div class="cards-2 row ">
+
+                <!-- Start Security Info Card -->
+                <div class="col-6">
+                    <div class="card card-3 mt-4 p-4">
+                        <div class="title">
+                            <h3>Security Info</h3>
+                            <p>Security Information About Your Account</p>
+                        </div>
+                        <div class="boxes">
+                            <div class="box box-1">
+                                <div class="details">
+                                    <h4>Password</h4>
+                                    <p>last Change On 25/10/2021</p>
+                                </div>
+                                <div class="button-form">
+                                    <a href=""><button type="button" class="btn btn-primary mt-4 ms-3 px-3 py-1">Change</button></a>
+                                </div>
+                            </div>
+                            <div class="box box-2">
+                                <div class="details">
+                                    <h4>Two-Factor Authentication</h4>
+                                    <p>Enable/Disable The Feature</p>
+                                </div>
+                                <button class="btn designed-btn" type="submit"><span></span><i class="bi bi-bag-x"></i><i class="bi bi-check"></i></button>
+                            </div>
+                            <div class="box box-3">
+                                <div class="details">
+                                    <h4>Devices</h4>
+                                    <p>Check The Login Devices List</p>
+                                </div>
+                                <a href=""><button type="button" class="btn mt-4 ms-3 px-3 py-1">Devices</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Security Info Card -->
+                
+                <!-- Start Social Info Card -->
+                <div class="col-6">
+                    <div class="card card-4 mt-4 p-4">
+                        <div class="title">
+                            <h3>Social Info</h3>
+                            <p>Social Media Information</p>
+                        </div>
+                        <div class="boxes">
+                            <div class="box box-1">
+                                <i class="bi bi-twitter"></i>
+                                <input type="text" placeholder="Twitter Username">
+                            </div>
+                            <div class="box box-2">
+                                <i class="bi bi-facebook"></i>
+                                <input type="text" placeholder="Facebook Username">
+                            </div>
+                            <div class="box box-3">
+                                <i class="bi bi-linkedin"></i>
+                                <input type="text" placeholder="Linkedin Username">
+                            </div>
+                            <div class="box box-4">
+                                <i class="bi bi-youtube"></i>
+                                <input type="text" placeholder="Youtube Username">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Social Info Card -->
+
+            </div>
+            <!-- End Second Row -->
+
+            <!-- Start Third Row -->
+            <div class="cards-3 row">
+
+                <!-- Start Widgets Control Card -->
+                <div class="col-6">
+                    <div class="card card-5 mt-4 p-4">
+                        <div class="title">
+                            <h3>Widgets Control</h3>
+                            <p>Show/Hide Widgets</p>
+                        </div>
+                        <form action="">
+                            <div class="box">
+                                <input type="checkbox" name="" id="" checked>
+                                <label for="">Quick Draft</label>
+                            </div>
+                            <div class="box">
+                                <input type="checkbox" name="" id="" checked>
+                                <label for="">Yearly Targets</label>
+                            </div>
+                            <div class="box">
+                                <input type="checkbox" name="" id="" checked>
+                                <label for="">Tickets Statics</label>
+                            </div>
+                            <div class="box">
+                                <input type="checkbox" name="" id="" checked>
+                                <label for="">Latest News</label>
+                            </div>
+                            <div class="box">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Latest Tasks</label>
+                            </div>
+                            <div class="box">
+                                <input type="checkbox" name="" id="" checked>
+                                <label for="">Top Search Items</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Widgets Control Card -->
+
+                <!-- Start Backup Manager Card -->
+                <div class="col-6">
+                    <div class="card card-6 mt-4 p-4">
+                        <div class="title">
+                            <h3>Backup Manager</h3>
+                            <p>Control Backup Time And Location</p>
+                        </div>
+                        <form action="">
+                            <div class="box">
+                                <input type="radio" name="" id="" checked>
+                                <label for="">Daily</label>
+                            </div>
+                            <div class="box">
+                                <input type="radio" name="" id="">
+                                <label for="">Weekly</label>
+                            </div>
+                            <div class="box">
+                                <input type="radio" name="" id="">
+                                <label for="">Monthly</label>
+                            </div>
+                        </form>
+                        <div class="row-boxes">
+                            <div class="box-rare">
+                                <i class="bi bi-hdd-stack-fill"></i>
+                                <h4>Megaman</h4>
+                            </div>
+                            <div class="box-rare">
+                                <i class="bi bi-hdd-stack-fill"></i>
+                                <h4>Zero</h4>
+                            </div>
+                            <div class="box-rare">
+                                <i class="bi bi-hdd-stack-fill"></i>
+                                <h4>Sigma</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Backup Manager Card -->
+
+            </div>
+            <!-- End Third Row -->
+
+        </div>
+    </div>
+    <!-- End Settings -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

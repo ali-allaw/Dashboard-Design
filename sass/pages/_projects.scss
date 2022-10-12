@@ -1,0 +1,180 @@
+$green-color: #22c55e;
+$red-color: #f44336;
+$blue-color: #0075ff;
+
+.projects {
+    @extend %eachSection;
+    input:focus {
+        outline: none;
+    }
+    p {
+        color: #777;
+    }
+    .title {
+        h3 {
+            font-weight: bold;
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+.projects {
+    .card {
+        &.card-2 {
+            .card-head {
+                &::after {
+                    content: "15/6/2022";
+                }
+            }
+            .card-foot {
+                span::after {
+                    background-color: $green-color;
+                    width: 80%;
+                }
+            }
+        }
+        &.card-3 {
+            .card-foot {
+                span::after {
+                    background-color: $blue-color;
+                    width: 100%;
+                }
+            }
+        }
+        &.card-3 {
+            .card-foot {
+                span::after {
+                    background-color: $blue-color;
+                    width: 100%;
+                }
+            }
+        }
+        &.card-4 {
+            .card-foot {
+                span::after {
+                    background-color: $green-color;
+                    width: 60%;
+                }
+            }
+        }
+        &.card-5 {
+            .card-foot {
+                span::after {
+                    background-color: $green-color;
+                    width: 70%;
+                }
+            }
+        }
+        &.card-6 {
+            .card-foot {
+                span::after {
+                    width: 40%;
+                }
+            }
+        }
+        &.card-7 {
+            .card-foot {
+                span::after {
+                    width: 65%;
+                    background-color: $green-color;
+                }
+            }
+        }
+        &.card-8 {
+            .card-foot {
+                span::after {
+                    width: 60%;
+                    background-color: $green-color;
+                }
+            }
+        }
+        &.card-9 {
+            .card-foot {
+                span::after {
+                    width: 90%;
+                    background-color: $green-color;
+                }
+            }
+        }
+        .card-head {
+            position: relative;
+            &::after {
+                content: "15/10/2021";
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                color: $text-color;
+                font-size: 18px;
+            }
+        }
+        .card-body {
+            padding: 0px;
+            .avatars {
+                padding: 50px 0px 30px;
+                border-bottom: 1px solid #eee;
+                img {
+                    width: 60px;
+                    border-radius: 50%;
+                    border: 3px solid white;
+                    &:nth-child(2) {
+                        transform: translateX(-30px);
+                    }
+                    &:nth-child(3) {
+                        transform: translateX(-50px);
+                    }
+                    &:nth-child(4) {
+                        transform: translateX(-70px);
+                    }
+                    &:nth-child(5) {
+                        transform: translateX(-90px);
+                    }
+                }
+            }
+            .skills {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                padding: 20px 0px;
+                border-bottom: 1px solid #eee;
+                span {
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                    background-color: #eee;
+                    border-radius: 8px;
+                    padding: 6px 12px;
+                    font-size: 18px;
+                    color: black;
+                }
+            }
+        }
+        .card-foot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            span {
+                width: 50%;
+                background-color: #eee;
+                height: 10px;
+                border-radius: 8px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 50%;
+                    height: 10px;
+                    background-color: $red-color;
+                    border-radius: 6px;
+                }
+            }
+            p {
+                font-size: 22px;
+                margin: 5px 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+$green-color: #22c55e;
+$blue-color: #0075ff;
+$yellow-color: #f59e0b;
+
+.plans {
+    @extend %eachSection;
+    input:focus {
+        outline: none;
+    }
+    p {
+        color: #777;
+    }
+    .title {
+        h3 {
+            font-weight: bold;
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+.plans {
+    .cards {
+        .card {
+            border-radius: 0px !important;
+            &.card-1 {
+                .card-head {
+                    background-color: $green-color;
+                    &::after {
+                        border: 5px solid $green-color;
+                    }
+                }    
+                button {
+                    background-color: $green-color;
+                }
+            }
+            &.card-2 {
+                .card-head {
+                    background-color: $blue-color;
+                    &::after {
+                        border: 5px solid $blue-color;
+                    }
+                }    
+                button {
+                    background-color: $blue-color;
+                }
+            }
+            &.card-3 {
+                .card-head {
+                    background-color: $yellow-color;
+                    &::after {
+                        border: 5px solid $yellow-color;
+                    }
+                }    
+                .card-foot {
+                    margin: auto;
+                    p {
+                        font-size: 22px;
+                        margin: 0px !important;
+                    }
+                }
+            }
+            .card-head {
+                width: 98%;
+                margin: 10px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 25px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: calc(100% + 16px);
+                    height: calc(100% + 16px);
+                    background-color: transparent;
+                    top: -8px;
+                    left: -8px;
+                }
+                p {
+                    color: white;
+                    padding: 0px !important;
+                    margin: 0px !important;
+                    font-weight: bold;
+                    &:first-of-type {
+                        font-size: 30px;
+                    }
+                    &:last-of-type {
+                        font-size: 50px;
+                    }
+                }
+                span {
+                    position: absolute;
+                    left: 38%;
+                    font-size: 35px;
+                }
+            }
+            .card-body {
+                margin-top: 10px;
+                padding-left: 5px !important;
+                .boxes {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    .box {
+                        padding-bottom: 5px;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        column-gap: 10px;
+                        border-bottom: 1px solid #eee;
+                        width: 100%;
+                        position: relative;
+                        &::after {
+                            content: "i";
+                            position: absolute;
+                            right: 0px;
+                            color: white;
+                            padding: 1px 10px;
+                            font-size: 16px;
+                            border-radius: 50%;
+                            background-color: #777;
+                        }
+                        p {
+                            font-size: 20px;
+                            color: black !important;
+                        }
+                        i {
+                            &.bi-check-lg {
+                                color: $green-color;
+                            }
+                            &.bi-x-lg {
+                                font-size: 20px;
+                                color: red;
+                            }
+                            font-size: 22px;
+                            transform: translateY(-8px);
+                        }
+                    }
+                }
+            }
+            button {
+                width: fit-content;
+                color: white;
+                font-size: 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+}

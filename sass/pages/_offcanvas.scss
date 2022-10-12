@@ -1,0 +1,65 @@
+.offcanva {
+    width: 250px;
+    height: 109vh;
+    li {
+        margin-top: 5px;
+        a {
+            font-size: 22px;
+        }
+        i {
+            font-size: 22px;
+            margin-top: 4px;
+        }
+    }
+    .title {
+        position: relative;
+        h2 {
+            position: relative;
+            &::after, &::before {
+                content: "";
+                position: absolute;
+                width: 50%;
+                border-top: 3px solid black;
+                bottom: -20px;
+            }
+            &::after {
+                left: -10px;
+            }
+            &::before {
+                right: -10px;
+            }
+        }
+        span {
+            background-color: black;
+            width: 15px;
+            height: 15px;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 180%);
+        }
+    }
+    ul {
+        width: 90%;
+        li {
+            display: flex;
+            gap: 15px; 
+            border-radius: 5px;
+            padding: 5px 15px;
+            width: 100%;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            i {
+                font-size: 18px;
+            }
+            &:hover {
+                background-color: #f7f7f7;
+            }
+        }
+    }
+}

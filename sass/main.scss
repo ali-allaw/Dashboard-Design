@@ -1,0 +1,194 @@
+// variables
+$section-color: #F1F5F9;
+$card-color: #eeefef;
+$btn-color: #0075ff;
+
+
+// placeholder for buttons
+%eachSection {
+    margin-top: 70px;
+    margin-left: 50px;
+    background-color: $section-color;
+}
+
+// placeholder for buttons
+%rightFalseBtn {
+    width: 110px;
+    padding: 6px;
+    height: 45px;
+    background-color: #ccc;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    transition: .3s;
+    position: relative;
+    &:hover {
+        background-color: #ccc;
+    }
+    &:focus {
+        background-color: $btn-color;
+        span {
+            transform: translateX(63px);
+        }
+        i:first-of-type {
+            opacity: 0;
+            display: none;
+        }
+        i:last-of-type {
+            display: block;
+        }
+    }
+}
+%rightFalseBtn-2 {
+    width: 110px;
+    padding: 6px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    transition: .3s;
+    position: relative;
+    position: absolute;
+    &:hover {
+        background-color: #ccc;
+    }
+    &:focus {
+        background-color: $btn-color;
+        span {
+            transform: translateX(82px);
+        }
+        i:first-of-type {
+            opacity: 0;
+            display: none;
+        }
+        i:last-of-type {
+            display: block;
+        }
+    }
+}
+
+%rightFalseBtnIcon-1 {
+    color: #ccc;
+    font-size: 20px;
+    padding: 1px 8px;
+    position: absolute;
+    transition: .2s;
+    left: 5px;
+    top: 5px;
+}
+%rightFalseBtnIcon-1-2 {
+    color: #ccc;
+    font-size: 10px;
+    padding: 1px 5px;
+    position: absolute;
+    transition: .2s;
+    left: 2px;
+    top: 5px;
+}
+%rightFalseBtnIcon-2 {
+    color: $btn-color;
+    font-size: 30px;
+    padding: 2px 6px;
+    position: absolute;
+    right: 2px;
+    transition: .2s;
+    display: none;
+}
+%rightFalseBtnIcon-2-2 {
+    color: $btn-color;
+    font-size: 20px;
+    padding: 1px 5px;
+    position: absolute;
+    right: 0px;
+    transition: .2s;
+    display: none;
+}
+%rightFalseBtnSpan {
+    position: absolute;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: .3s;
+}
+%rightFalseBtnSpan-2 {
+    position: absolute;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: .3s;
+    left: 4px;
+}
+
+// import all css files to the main file
+@import './pages/navbar.scss';
+@import './pages/offcanvas.scss';
+@import './pages/dashboard';
+@import './pages/settings';
+@import './pages/profile';
+@import './pages/projects';
+@import './pages/courses';
+@import './pages/friends';
+@import './pages/files';
+@import './pages/plans';
+@import './pages/test';
+
+// Create A Framework
+.designed-title {
+    position: relative;
+    .designed-h2 {
+        font-size: 45px;
+        font-weight: bold;
+        padding:10px 2px 25px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 170px;
+            bottom: 10px;
+            left: 0;
+            height: 4px;
+            background-color: white;
+        }
+    }
+    span {
+        position: absolute;
+        width: 60px;
+        height: 4px;
+        background-color: black;
+        left: 0;
+        bottom: 10px;
+    }
+}
+
+.container-fluid{
+    width: 87% !important;
+    transform: translateX(7%);
+    .card {
+        border: none;
+        background-color: white;
+        border-radius: 10px;
+        .btn {
+            float: right;
+            margin-right: 20px;
+        }
+    }
+}
+
+.offcanva {
+    li {
+        cursor: default !important;
+        &.active {
+            background-color: #f7f7f7;
+        }
+    }
+}
+
+.row {
+    margin-right: 0px !important;
+}
