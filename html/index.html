@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- link css file -->
+    <link rel="stylesheet" href="/sass/main.css">
+    <!-- get bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- get bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <div class="page">
+        <div class="side-bar">
+            <!-- Start offcanvas -->
+            <div class="offcanva position-relative top-0 d-flex justify-content-start align-items-center flex-column pt-5 pt-sm-3 shadow p-3 p-sm-4 mb-5 bg-body">
+                <div class="title">
+                    <h2 class="h2 fw-bold">Elzero</h2>
+                    <span></span>
+                </div>
+                <ul class="mt-5 list-unstyled d-flex flex-column gap-3">
+                    <li class="active"><i class="bi bi-bar-chart-steps"></i><a href="Dashboard.html">Dashboard</a></li>
+                    <li class=""><i class="bi bi-gear-fill"></i><a href="Settings.html">Settings</a></li>
+                    <li class=""><i class="bi bi-person"></i><a href="Profile.html">Profile</a></li>
+                    <li class=""><i class="bi bi-share-fill"></i><a href="Projects.html">Projects</a></li>
+                    <li class=""><i class="bi bi-award-fill"></i><a href="Courses.html">Courses</a></li>
+                    <li class=""><i class="bi bi-person-circle"></i><a href="Friends.html">Friends</a></li>
+                    <li class=""><i class="bi bi-file-earmark"></i><a href="Files.html">Files</a></li>
+                    <li class=""><i class="bi bi-credit-card"></i><a href="Plans.html">Plans</a></li>
+                </ul>
+            </div>
+            <!-- End offcanvas -->
+        </div>
+
+        <div class="content w-100">
+            <!-- Start navbar -->
+            <div class="navbar">
+                <div class="left">
+                    <i class="bi bi-search"></i>
+                    <input class="py-2 px-4 border border-secondary" type="text" placeholder="Type A Keyword" aria-label="Type A Keyword">
+                </div>
+                <div class="right gap-3">
+                    <i class="bi bi-bell position-relative"></i>
+                    <img src="/imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End navbar -->
+
+            <!-- Start Dashboard -->
+            <div class="dashboard pt-3 pb-3" id="dashboard">
+                <div class="container-fluid">
+                    <div class="designed-title">
+                        <h2 class="designed-h2">Dashboard</h2>
+                        <span></span>
+                    </div>
+
+                    <!-- Start First Row -->
+                    <div class="cards row ">
+                        
+                        <!-- Start Welcome Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-1 mt-4">
+                                <div class="card-head card-head-1 d-xxl-flex flex-xxl-row justify-content-xxl-space-between align-items-xxl-center text-sm-center">
+                                    <div class="title mb-4">
+                                        <h3>Welcome</h3>
+                                        <p>Ali Allaw</p>
+                                    </div>
+                                    <div class="welcome-img d-sm-none d-xxl-block">
+                                        <img src="/imgs/welcome.png" alt="">
+                                    </div>
+                                </div>
+                                <img src="/imgs/avatar.png" alt="" class="avatar">
+                                <div class="card-foot gap-5 pt-4 d-sm-block pt-sm-4 pb-sm-4 pt-xxl-4 pb-xxl-1 d-xxl-flex justify-content-xxl-space-between align-items-xxl-center">
+                                    <div class="details">
+                                        <h2>Ali Allaw</h3>
+                                        <p>developer</p>
+                                    </div>
+                                    <div class="details mt-sm-4 mt-xxl-0">
+                                        <h2>80</h3>
+                                        <p>Projects</p>
+                                    </div>
+                                    <div class="details mt-sm-4 mt-xxl-0">
+                                        <h2>$10</h3>
+                                        <p>Earned</p>
+                                    </div>
+                                </div>
+                                <div class="button-form mb-xxl-4">
+                                    <a href="Profile.html"><button type="button" class="btn btn-primary mt-4 ms-3 px-3 py-1 mb-sm-4 mb-xxl-5">Profile</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start Welcome Card -->
+
+                        <!-- Start Quick Draft Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-2 mt-4">
+                                <div class="card-head px-4 pt-4">
+                                    <div class="title mb-4">
+                                        <h3>Quick Draft</h3>
+                                        <p>Write A Draft For Your Ideas</p>
+                                    </div>
+                                    <form class="card-form">
+                                        <input type="text" placeholder="Title">
+                                        <input type="text" placeholder="Your Thought">
+                                    </form>
+                                </div>
+                                <div class="button-form">
+                                    <button type="button" class="btn btn-primary mt-4 ms-3 px-3 py-1">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start Quick Draft Card -->
+
+                    </div>
+                    <!-- End First Row -->
+
+                    <!-- Start Second Row -->
+                    <div class="cards row">
+
+                        <!-- Start Yearly Target Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-3 ">
+                                <div class="card-head px-4 pt-4">
+                                    <div class="title">
+                                        <h3>Yearly Target</h3>
+                                        <p>Targets Of The Year</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="box box-1">
+                                        <i class="bi bi-currency-dollar"></i>
+                                        <div class="details details-1">
+                                            <p>Money</p>
+                                            <p>$20.000</p>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="box box-2">
+                                        <i class="bi bi-code-slash"></i>
+                                        <div class="details details-2">
+                                            <p>Projects</p>
+                                            <p>24</p>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="box box-3">
+                                        <i class="bi bi-person-fill"></i>
+                                        <div class="details details-3">
+                                            <p>Team</p>
+                                            <p>12</p>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Yearly Target Card -->
+
+                        <!-- Start Tickets Statics Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-4 p-4 mt-sm-4 mt-xxl-0">
+                                <div class="title mb-4">
+                                    <h3>Tickets Statics</h3>
+                                    <p>Everything About Support Tickets</p>
+                                </div>
+                                <div class="big-box big-box-1 d-sm-block d-xxl-flex">
+                                    <div class="box box-1">
+                                        <i class="bi bi-menu-button-wide"></i>
+                                        <p>2500</p>
+                                        <p>total</p>
+                                    </div>
+                                    <div class="box box-2">
+                                        <i class="bi bi-plus-circle-dotted"></i>
+                                        <p>500</p>
+                                        <p>Pending</p>
+                                    </div>
+                                </div>
+                                <div class="big-box big-box-2 d-sm-block d-xxl-flex">
+                                    <div class="box box-1">
+                                        <i class="bi bi-check-circle"></i>
+                                        <p>1900</p>
+                                        <p>Closed</p>
+                                    </div>
+                                    <div class="box box-2">
+                                        <i class="bi bi-bag-x"></i>
+                                        <p>100</p>
+                                        <p>Deleted</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- End Tickets Statics Card -->
+
+                    </div>
+                    <!-- End Second Row -->
+
+                    <!-- Start Third Row -->
+                    <div class="cards row">
+
+                        <!-- Start Latest News Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-5 p-4 align-items-sm-center align-items-xxl-start">
+                                <div class="title ">
+                                    <h3 class="">Latest News</h3>
+                                </div>       
+                                <div class="boxes gap-sm-3">
+                                    <div class="box box-1 flex-sm-column text-sm-center flex-xxl-row text-xxl-start">
+                                        <img src="/imgs/news-01.png" alt="">
+                                        <div class="details">
+                                            <p>Created SASS Section</p>
+                                            <p>New SASS Examples</p>
+                                        </div>
+                                        <span class="d-sm-none d-xxl-block">3 Days Ago</span>
+                                    </div>
+                                    <div class="box box-2 flex-sm-column text-sm-center flex-xxl-row text-xxl-start">
+                                        <img src="/imgs/news-02.png" alt="">
+                                        <div class="details">
+                                            <p>Changed The Design</p>
+                                            <p>New Website Design.....</p>
+                                        </div>
+                                        <span class="d-sm-none d-xxl-block">5 Days Ago</span>
+                                    </div>
+                                    <div class="box box-3 flex-sm-column text-sm-center flex-xxl-row text-xxl-start">
+                                        <img src="/imgs/news-03.png" alt="">
+                                        <div class="details">
+                                            <p>Team Increased</p>
+                                            <p>3 Developers Joined Team!!!!</p>
+                                        </div>
+                                        <span class="d-sm-none d-xxl-block">7 Days Ago</span>
+                                    </div>
+                                    <div class="box box-4 flex-sm-column text-sm-center flex-xxl-row text-xxl-start">
+                                        <img src="/imgs/news-04.png" alt="">
+                                        <div class="details">
+                                            <p>Payment Gateway</p>
+                                            <p>Uploaded Payment Gateways</p>
+                                        </div>
+                                        <span class="d-sm-none d-xxl-block">9 Days Ago</span>
+                                    </div>
+                                </div>             
+                                
+                            </div>
+                        </div>
+                        <!-- End Latest News Card -->
+
+                        <!-- Start Latest Tasks Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-6 p-4 mt-sm-4 mt-xxl-0">
+                                <div class="title">
+                                    <h3>Latest Tasks</h3>
+                                </div>
+                                <div class="big-box mt-xxl-2">
+                                    <div class="box box-1 mt-xxl-5">
+                                        <div class="text">
+                                            <p>Record One New Video</p>
+                                            <p>Record Python Create Exe Project</p>
+                                        </div>
+                                        <i class="bi bi-trash"></i>
+                                    </div>
+                                    <div class="box box-2 mt-xxl-5">
+                                        <div class="text">
+                                            <p>write Article</p>
+                                            <p>Write Low Level vs High Level Languages</p>
+                                        </div>
+                                        <i class="bi bi-trash"></i>
+                                    </div>
+                                    <div class="box box-3 mt-xxl-5">
+                                        <div class="text">
+                                            <p>Finish Project</p>
+                                            <p>Publish Academy progrmming Project</p>
+                                        </div>
+                                        <i class="bi bi-trash"></i>
+                                    </div>
+                                    <div class="box box-4 mt-xxl-5">
+                                        <div class="text">
+                                            <del>Attend The Meeting</del>
+                                            <del>Attend The Project Business Analysis Meeting</del>
+                                        </div>
+                                        <i class="bi bi-trash"></i>
+                                    </div>
+                                    <div class="box box-5">
+                                        <div class="text">
+                                            <p>Finish Lesson</p>
+                                            <p>Finish Teaching Flex Box</p>
+                                        </div>
+                                        <i class="bi bi-trash"></i>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <!-- End Latest Tasks Card -->
+
+                    </div>            
+                    <!-- End Third Row -->
+
+                    <!-- Start Fourth Row -->
+                    <div class="cards row mt-4">
+
+                        <!-- Start Top Search Items Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-7 p-4">
+                                <div class="title">
+                                    <h3>Top Search Items</h3>
+                                </div>
+                                <div class="boxes">
+                                    <div class="box box-1">
+                                        <p>keyword</p>
+                                    </div>
+                                    <div class="box box-2">
+                                        <p>Programming</p>
+                                    </div>
+                                    <div class="box box-3">
+                                        <p>JavaScript</p>
+                                    </div>
+                                    <div class="box box-4">
+                                        <p>PHP</p>
+                                    </div>
+                                    <div class="box box-5">
+                                        <p>Code</p>
+                                    </div>
+                                    <div class="box box-6">
+                                        <p>Design</p>
+                                    </div>
+                                    <div class="box box-7">
+                                        <p>Logic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Top Search Items Card -->
+
+                        <!-- Start Latest Uploads Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-8 p-4 mt-sm-4 mt-xxl-0">
+                                <div class="title">
+                                    <h3>Latest Uploads</h3>
+                                </div>
+                                <div class="boxes">
+                                    <div class="box box-1">
+                                        <img src="/svg/pdf.svg" alt="">
+                                        <div class="details">
+                                            <p>my-file.pdf</p>
+                                            <p>K.O. Code</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-2">
+                                        <img src="/svg/avi.svg" alt="">
+                                        <div class="details">
+                                            <p>My-Video-File.avi</p>
+                                            <p>Admin</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-3">
+                                        <img src="/svg/psd.svg" alt="">
+                                        <div class="details">
+                                            <p>My-Psd-File.pdf</p>
+                                            <p>Ali</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-4">
+                                        <img src="/svg/zip.svg" alt="">
+                                        <div class="details">
+                                            <p>My-Zip-File.pdf</p>
+                                            <p>User</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-5">
+                                        <img src="/svg/dll.svg" alt="">
+                                        <div class="details">
+                                            <p>My-DLL-File.pdf</p>
+                                            <p>Admin</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-6">
+                                        <img src="/svg/eps.svg" alt="">
+                                        <div class="details">
+                                            <p>My-Eps-File.pdf</p>
+                                            <p>Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Latest Uploads Card -->
+
+                    </div>
+                    <!-- End Fourth Row -->
+
+                    <!-- Start Fifth Row -->
+                    <div class="cards row">
+
+                        <!-- Start Last Project Progress Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-9 p-4">
+                                <div class="title">
+                                    <h3>Last Project Progress</h3>
+                                </div>
+                                <div class="boxes">
+                                    <div class="box box-1">
+                                        <span></span>
+                                        <p>Got The Project</p>
+                                    </div>
+                                    <div class="box box-2">
+                                        <span></span>
+                                        <p>Started The Project</p>
+                                    </div>
+                                    <div class="box box-3">
+                                        <span></span>
+                                        <p>The Project About To Finish</p>
+                                    </div>
+                                    <div class="box box-4">
+                                        <span></span>
+                                        <p>Test The Project</p>
+                                    </div>
+                                    <div class="box box-5">
+                                        <span></span>
+                                        <p>Finish The Project & Get Money</p>
+                                    </div>
+                                </div>
+                                <img src="/imgs/project.png" alt="">
+                            </div>
+                        </div>
+                        <!-- End Last Project Progress Card -->
+
+                        <!-- Start Reminders Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-10 p-4 mt-sm-4 mt-xxl-0">
+                                <div class="title">
+                                    <h3>Reminders</h3>
+                                </div>
+                                <div class="boxes">
+                                    <div class="box box-1">
+                                        <span></span>
+                                        <div class="details">
+                                            <p>Check My Task List</p>
+                                            <p>28/09/2022 - 12:00am</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-2">
+                                        <span></span>
+                                        <div class="details">
+                                            <p>Check My Projects</p>
+                                            <p>26/10/2022 - 12:00am</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-3">
+                                        <span></span>
+                                        <div class="details">
+                                            <p>Call All My Clients</p>
+                                            <p>05/11/2022 - 12:00am</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-4">
+                                        <span></span>
+                                        <div class="details">
+                                            <p>Finish The Developement Workshop</p>
+                                            <p>20/12/2022 - 12:00am</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Reminders Card -->
+
+                    </div>
+                    <!-- End Fifth Row -->
+
+                    <!-- Start Sixth Row -->
+                    <div class="cards row mt-4">
+
+                        <!-- Start Latest Post Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-11 p-4">
+                                <div class="title">
+                                    <h3>Latest Post</h3>
+                                </div>
+                                <div class="person">
+                                    <div class="head pb-3">
+                                        <img src="/imgs/avatar.png" alt="">
+                                        <div class="details">
+                                            <p>Ali Allaw</p>
+                                            <p>About 3 Hours Ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="body mt-3 lh-lg pb-2">
+                                        <p>You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All The People All Of The Time</p>
+                                    </div>
+                                    <div class="foot mt-3">
+                                        <div class="left">
+                                            <i class="bi bi-heart"></i>
+                                            <p>1.8K</p>
+                                        </div>
+                                        <div class="right">
+                                            <i class="bi bi-chat-right-dots"></i>
+                                            <p>500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Latest Post Card -->
+
+                        <!-- Start Social Media Stats Card -->
+                        <div class="col-xl-12 col-xxl-6 ">
+                            <div class="card card-12 p-4 mt-sm-4 mt-xxl-0 pb-xl-5 pt-xl-5 pb-xxl-4 pt-xxl-4">
+                                <div class="title">
+                                    <h3>Social Media Stats</h3>
+                                </div>
+                                <div class="boxes">
+                                    <div class="box box-1">
+                                        <i class="bi bi-twitter"></i>
+                                        <div class="details">
+                                            <p>90K Followers</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-2">
+                                        <i class="bi bi-facebook"></i>
+                                        <div class="details">
+                                            <p>2M Like</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-3">
+                                        <i class="bi bi-youtube"></i>
+                                        <div class="details">
+                                            <p>1M Subs</p>
+                                        </div>
+                                    </div>
+                                    <div class="box box-4">
+                                        <i class="bi bi-linkedin"></i>
+                                        <div class="details">
+                                            <p>70K Followers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Social Media Stats Card -->
+
+                    </div>
+                    <!-- End Sixth Row -->
+
+                    <!-- Start seventh Row -->
+                    <div class="cards row mt-4">
+
+                        <!-- Start Projects Table Card -->
+                        <div class="col-12">
+                            <div class="card card-13 p-4">
+                                <div class="title">
+                                    <h3>Projects</h3>
+                                </div>
+                                <div class="boxes mt-3">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col-3">Name</th>
+                                                <th scope="col-2">Finish Date</th>
+                                                <th scope="col-3">Client</th>
+                                                <th scope="col-1">Price</th>
+                                                <th scope="col-1">Team</th>
+                                                <th scope="col-2">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+                                            <tr>
+                                                <td>Ministry Wikipedia</td>
+                                                <td>10 May 2022</td>
+                                                <td>Ministry</td>
+                                                <td>$5300</td>
+                                                <td><img src="/imgs/team-01.png" alt=""><img src="/imgs/team-02.png"><img src="/imgs/team-03.png"><img src="/imgs/team-04.png" alt=""></td>
+                                                <td class="designed-td"><p>Pending</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>K.O. Shop</td>
+                                                <td>12 Oct 2021</td>
+                                                <td>K.O. Company</td>
+                                                <td>$1500</td>
+                                                <td><img src="/imgs/team-01.png" alt=""><img src="/imgs/team-02.png"><img src="/imgs/team-04.png" alt=""></td>
+                                                <td class="designed-td"><p>In Progress</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bouba App</td>
+                                                <td>05 Sep 2021</td>
+                                                <td>Bouba</td>
+                                                <td>$800</td>
+                                                <td><img src="/imgs/team-02.png"><img src="/imgs/team-03.png" alt=""></td>
+                                                <td class="designed-td"><p>Completed</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mahmoud Website</td>
+                                                <td>22 May 2021</td>
+                                                <td>Mahmoud</td>
+                                                <td>$600</td>
+                                                <td><img src="/imgs/team-01.png"><img src="/imgs/team-02.png" alt=""></td>
+                                                <td class="designed-td"><p>Completed</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sayed Website</td>
+                                                <td>24 May 2021</td>
+                                                <td>Sayed</td>
+                                                <td>$300</td>
+                                                <td><img src="/imgs/team-01.png"><img src="/imgs/team-03.png" alt=""></td>
+                                                <td class="designed-td"><p>Rejected</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Arena Application</td>
+                                                <td>24 May 2021</td>
+                                                <td>Sayed</td>
+                                                <td>$2600</td>
+                                                <td><img src="/imgs/team-01.png"><img src="/imgs/team-02.png" alt=""><img src="/imgs/team-03.png" alt=""><img src="/imgs/team-05.png" alt=""></td>
+                                                <td class="designed-td"><p>Completed</p></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Projects Table Card -->
+                        
+                    </div>
+                    <!-- End seventh Row -->
+
+                </div>
+            </div>
+            <!-- End Dashboard -->
+            
+        </div>
+    </div>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>
