@@ -3,6 +3,9 @@ $section-color: #F1F5F9;
 $card-color: #eeefef;
 $btn-color: #0075ff;
 
+.page {
+    display: flex;
+}
 
 // placeholder for buttons
 %eachSection {
@@ -137,7 +140,6 @@ $btn-color: #0075ff;
 @import './pages/friends';
 @import './pages/files';
 @import './pages/plans';
-@import './pages/test';
 
 // Create A Framework
 .designed-title {

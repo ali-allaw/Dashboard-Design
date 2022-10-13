@@ -1,4 +1,8 @@
-.test, .plans, .files, .friends, .courses, .projects, .profile, .settings, .dashboard {
+.page {
+  display: flex;
+}
+
+.plans, .files, .friends, .courses, .projects, .profile, .settings, .dashboard {
   margin: 40px 0px 0px;
   padding: 20px 20px 0px;
   background-color: #F1F5F9;
@@ -229,6 +233,8 @@
 }
 .offcanva ul li {
   display: flex;
+  justify-content: start;
+  align-items: center;
   gap: 15px;
   border-radius: 5px;
   padding: 5px 15px;
@@ -239,8 +245,14 @@
   text-decoration: none;
   color: black;
 }
+.offcanva ul li p {
+  display: inline-block;
+  padding: 0px !important;
+  margin: 0px !important;
+}
 .offcanva ul li i {
   font-size: 18px;
+  margin-right: 20px;
   cursor: pointer;
 }
 .offcanva ul li:hover {
@@ -251,6 +263,9 @@
   .offcanva {
     width: 62px;
   }
+  .offcanva p {
+    display: none !important;
+  }
   .offcanva ul {
     margin-top: 0px !important;
   }
@@ -258,20 +273,22 @@
     padding: 10px 25px;
     transform: translateX(-35%);
   }
-  .offcanva h2 {
+  .offcanva ul li a {
+    margin: 0px !important;
+    padding-right: 50px !important;
+  }
+  .offcanva ul li i {
+    position: relative;
+    left: -10px;
+  }
+  .offcanva .title h2 {
     font-size: 18px !important;
   }
-  .offcanva h2::before, .offcanva h2::after {
+  .offcanva .title h2::before, .offcanva .title h2::after {
     display: none;
   }
-  .offcanva span {
-    display: none !important;
-  }
-  .offcanva a {
+  .offcanva .title span {
     display: none;
-  }
-  .offcanva i {
-    transform: translateX(-10px);
   }
 }
 .dashboard {
@@ -2229,152 +2246,6 @@
   color: white;
   font-size: 20px;
   margin-left: 5px;
-}
-
-.page {
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-}
-
-.test input:focus {
-  outline: none;
-}
-.test p {
-  color: #777;
-}
-.test .title h3 {
-  font-weight: bold;
-  font-size: 35px;
-}
-.test .title p {
-  font-size: 20px;
-}
-
-.test .card {
-  padding-bottom: 15px !important;
-}
-.test .card.card-1::after, .test .card.card-9::after, .test .card.card-10::after {
-  content: "Vip";
-  position: absolute;
-  bottom: 100px;
-  right: 30px;
-  color: #f44336;
-  font-size: 55px;
-  font-weight: bold;
-  filter: opacity(10%);
-}
-.test .card .card-head {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding-bottom: 20px;
-}
-.test .card .card-head::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0.2px;
-  background-color: #eee;
-  bottom: 0px;
-  left: 0px;
-}
-.test .card .card-head .head-icons {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.test .card .card-head .head-icons i {
-  background-color: #eee;
-  padding: 10px 15px;
-  border-radius: 50%;
-  font-size: 18px;
-  margin-right: 3px;
-  color: #777;
-}
-.test .card .card-head .details {
-  margin-top: 20px;
-}
-.test .card .card-head .details img {
-  border-radius: 50%;
-  width: 140px;
-}
-.test .card .card-head .details h4 {
-  margin-top: 20px;
-  font-weight: bold !important;
-  margin-bottom: 5px;
-}
-.test .card .card-head .details p {
-  font-size: 20px;
-  margin: 0px;
-}
-.test .card .card-body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  position: relative;
-  row-gap: 10px;
-  padding-bottom: 15px;
-  padding-left: 3px;
-}
-.test .card .card-body::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0.2px;
-  background-color: #eee;
-  bottom: 0px;
-  left: 0px;
-}
-.test .card .card-body .box {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-}
-.test .card .card-body .box i {
-  font-size: 20px;
-  color: black;
-}
-.test .card .card-body .box p {
-  padding: 0px;
-  margin: 0px;
-  color: black !important;
-  font-size: 20px !important;
-}
-.test .card .card-foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 0px;
-}
-.test .card .card-foot .left {
-  font-size: 18px;
-  padding-left: 3px;
-}
-.test .card .card-foot .left p {
-  transform: translateY(7px);
-}
-.test .card .card-foot .right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.test .card .card-foot .right .button-form {
-  margin: 0px !important;
-  padding: 0px !important;
-}
-.test .card .card-foot .right .button-form button {
-  padding: 3px 10px !important;
-  font-size: 18px;
-  margin: 0px !important;
-}
-.test .card .card-foot .right .button-form button:nth-child(1) {
-  margin-right: 5px !important;
 }
 
 .designed-title {
