@@ -6,8 +6,8 @@ $btn-color: #0075ff;
 
 // placeholder for buttons
 %eachSection {
-    margin-top: 70px;
-    margin-left: 50px;
+    margin: 40px 0px 0px;
+    padding: 20px 20px 0px;
     background-color: $section-color;
 }
 
@@ -166,19 +166,19 @@ $btn-color: #0075ff;
     }
 }
 
-.container-fluid{
-    width: 87% !important;
-    transform: translateX(7%);
-    .card {
-        border: none;
-        background-color: white;
-        border-radius: 10px;
-        .btn {
-            float: right;
-            margin-right: 20px;
-        }
+// .container-fluid{
+//     width: 87% !important;
+//     transform: translateX(7%);
+.card {
+    border: none !important;
+    background-color: white !important;
+    border-radius: 10px !important;
+    .btn {
+        float: right !important;
+        margin-right: 20px !important;
     }
 }
+// }
 
 .offcanva {
     li {
@@ -189,6 +189,3 @@ $btn-color: #0075ff;
     }
 }
 
-.row {
-    margin-right: 0px !important;
-}

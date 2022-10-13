@@ -1,6 +1,11 @@
 .dashboard {
     @extend %eachSection;
     overflow: hidden;
+    @media (max-width: 767px) {
+        .card {
+            width: 90%;
+        }
+    }    
 }
 
 
@@ -37,8 +42,13 @@
                 width: 70px;
                 border: 5px solid white;
                 border-radius: 50%;
-                top: 136px;
+                top: 135px;
                 left: 20px;
+                @media (max-width: 767px) {
+                    .avatar{ 
+                        left: 200px !important;
+                    }
+                }
             }
             .card-foot {
                 border-top:  1px solid #dadada;
@@ -322,10 +332,13 @@
                         padding-top: 0px !important;
                     }
                     &:not(:last-of-type)::after {
+                        @media (max-width: 1399px) {
+                            transform: translateY(100px);
+                        }
                         position: absolute;
                         content: "";
                         height: .2px;
-                        background-color: rgb(228, 228, 228);
+                        background-color: #eee;
                         width: 90%;
                         left: 4%;
                         transform: translateY(65px);

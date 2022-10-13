@@ -20,6 +20,12 @@ $btn-color: #0075ff;
 }
 
 .settings {
+    @media (max-width: 767px) {
+        .card {
+            width: 90%;
+        }
+    }
+    
     .card-1 {
         .card-body {
             display: flex;
@@ -82,7 +88,6 @@ $btn-color: #0075ff;
                     }
                     input {
                         background-color: #F0F4F8;
-                        width: calc(100% + 115%);
                         cursor: not-allowed;
                     }
                 }
@@ -95,6 +100,13 @@ $btn-color: #0075ff;
                     padding: 10px;
                     border-radius: 6px;
                     width: calc(100% + 220%);
+                    @media (max-width: 992px) {
+                        max-width: calc(100% + 150%) ;
+                    }
+                    @media (max-width: 767px) {
+                        max-width: calc(100% + 130%) ;
+
+                    }
                 }
             }
         }

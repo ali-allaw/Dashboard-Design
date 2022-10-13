@@ -1,6 +1,6 @@
-.plans, .files, .friends, .courses, .projects, .profile, .settings, .dashboard {
-  margin-top: 70px;
-  margin-left: 50px;
+.test, .plans, .files, .friends, .courses, .projects, .profile, .settings, .dashboard {
+  margin: 40px 0px 0px;
+  padding: 20px 20px 0px;
   background-color: #F1F5F9;
 }
 
@@ -125,42 +125,37 @@
 }
 
 .navbar {
-  position: relative;
-  height: 15px;
-}
-.navbar .container-fluid {
-  margin: 10px auto;
-}
-.navbar .left {
-  position: relative;
+  width: 100%;
+  top: 20px;
+  right: 10px;
 }
 .navbar .left i {
-  top: -5%;
+  top: 5px;
   left: 45px;
   position: absolute;
   transform: translate(50%, 50%);
   color: #777;
 }
-.navbar input {
+.navbar .left input {
   border-radius: 10px;
   caret-color: #777;
   border: 1px solid #ccc;
   width: 180px;
   margin-left: 40px;
 }
-.navbar input::-moz-placeholder {
+.navbar .left input::-moz-placeholder {
   color: #777;
   padding: 10px;
 }
-.navbar input:-ms-input-placeholder {
+.navbar .left input:-ms-input-placeholder {
   color: #777;
   padding: 10px;
 }
-.navbar input::placeholder {
+.navbar .left input::placeholder {
   color: #777;
   padding: 10px;
 }
-.navbar input:focus {
+.navbar .left input:focus {
   outline: none;
 }
 .navbar .right {
@@ -187,7 +182,7 @@
 
 .offcanva {
   width: 250px;
-  height: 109vh;
+  height: 109vh !important;
 }
 .offcanva li {
   margin-top: 5px;
@@ -246,13 +241,46 @@
 }
 .offcanva ul li i {
   font-size: 18px;
+  cursor: pointer;
 }
 .offcanva ul li:hover {
   background-color: #f7f7f7;
 }
 
+@media (max-width: 992px) {
+  .offcanva {
+    width: 62px;
+  }
+  .offcanva ul {
+    margin-top: 0px !important;
+  }
+  .offcanva ul li {
+    padding: 10px 25px;
+    transform: translateX(-35%);
+  }
+  .offcanva h2 {
+    font-size: 18px !important;
+  }
+  .offcanva h2::before, .offcanva h2::after {
+    display: none;
+  }
+  .offcanva span {
+    display: none !important;
+  }
+  .offcanva a {
+    display: none;
+  }
+  .offcanva i {
+    transform: translateX(-10px);
+  }
+}
 .dashboard {
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .dashboard .card {
+    width: 90%;
+  }
 }
 
 .dashboard .cards .title h3 {
@@ -283,8 +311,13 @@
   width: 70px;
   border: 5px solid white;
   border-radius: 50%;
-  top: 136px;
+  top: 135px;
   left: 20px;
+}
+@media (max-width: 767px) {
+  .dashboard .cards .card-1 .avatar .avatar {
+    left: 200px !important;
+  }
 }
 .dashboard .cards .card-1 .card-foot {
   border-top: 1px solid #dadada;
@@ -541,10 +574,15 @@
   position: absolute;
   content: "";
   height: 0.2px;
-  background-color: rgb(228, 228, 228);
+  background-color: #eee;
   width: 90%;
   left: 4%;
   transform: translateY(65px);
+}
+@media (max-width: 1399px) {
+  .dashboard .cards .card-5 .boxes .box:not(:last-of-type)::after {
+    transform: translateY(100px);
+  }
 }
 .dashboard .cards .card-5 .boxes .box img {
   width: 130px;
@@ -1064,6 +1102,11 @@
   font-size: 18px;
 }
 
+@media (max-width: 767px) {
+  .settings .card {
+    width: 90%;
+  }
+}
 .settings .card-1 .card-body {
   display: flex;
   justify-content: space-between;
@@ -1123,7 +1166,6 @@
 }
 .settings .card-2 form .box.box-3 input {
   background-color: #F0F4F8;
-  width: 215%;
   cursor: not-allowed;
 }
 .settings .card-2 form .box label {
@@ -1135,6 +1177,16 @@
   padding: 10px;
   border-radius: 6px;
   width: 320%;
+}
+@media (max-width: 992px) {
+  .settings .card-2 form .box input {
+    max-width: 250%;
+  }
+}
+@media (max-width: 767px) {
+  .settings .card-2 form .box input {
+    max-width: 230%;
+  }
 }
 
 .settings .card-3 .boxes {
@@ -1331,6 +1383,11 @@
   top: -20px;
   right: 0px;
 }
+@media (max-width: 1199px) {
+  .profile .cards-1 .card-1 .details::after {
+    display: none;
+  }
+}
 .profile .cards-1 .card-1 .details img {
   width: 150px;
 }
@@ -1375,6 +1432,11 @@
   padding-bottom: 40px;
   position: relative;
 }
+@media (max-width: 1200px) {
+  .profile .cards-1 .card-1 .boxes .box {
+    margin: 80px auto !important;
+  }
+}
 .profile .cards-1 .card-1 .boxes .box {
   width: 80%;
   display: flex;
@@ -1387,6 +1449,11 @@
   align-items: center;
   -moz-column-gap: 50px;
        column-gap: 50px;
+}
+@media (max-width: 1120px) {
+  .profile .cards-1 .card-1 .boxes .box .lg-box .texts .texts {
+    display: block;
+  }
 }
 .profile .cards-1 .card-1 .boxes .box:not(:first-child) {
   margin-top: 80px;
@@ -1416,6 +1483,11 @@
   position: relative;
   padding-bottom: 30px;
 }
+@media (max-width: 1199px) {
+  .profile .cards-2 .card-2 .boxes {
+    align-items: center;
+  }
+}
 .profile .cards-2 .card-2 .boxes .box:not(:last-child):after {
   content: "";
   position: absolute;
@@ -1441,6 +1513,13 @@
   margin-top: 15px;
   position: relative;
 }
+@media (max-width: 1199px) {
+  .profile .cards-2 .card-3 .boxes .box {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .profile .cards-2 .card-3 .boxes .box:not(:first-child) {
   margin-top: 46px;
 }
@@ -1458,6 +1537,13 @@
   align-items: flex-start;
   -moz-column-gap: 15px;
        column-gap: 15px;
+}
+@media (max-width: 1199px) {
+  .profile .cards-2 .card-3 .boxes .box .lg-box {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .profile .cards-2 .card-3 .boxes .box .lg-box .details p {
   margin: 0px;
@@ -1478,6 +1564,11 @@
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
+}
+@media (max-width: 1199px) {
+  .profile .cards-2 .card-3 .boxes .box .md-box {
+    align-items: center;
+  }
 }
 .profile .cards-2 .card-3 .boxes .box .md-box p {
   font-size: 22px;
@@ -1582,6 +1673,14 @@
   padding: 20px 0px;
   border-bottom: 1px solid #eee;
 }
+@media (max-width: 992px) {
+  .projects .card .card-body .skills {
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+}
 .projects .card .card-body .skills span {
   background-color: #eee;
   border-radius: 8px;
@@ -1597,6 +1696,14 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+}
+@media (max-width: 992px) {
+  .projects .card .card-foot {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+  }
 }
 .projects .card .card-foot span {
   width: 50%;
@@ -1871,7 +1978,11 @@
   row-gap: 20px;
 }
 .files .cards .card .card-head .head-details img {
+  transition: 0.3s;
   width: 90px;
+}
+.files .cards .card .card-head .head-details img:hover {
+  transform: rotate(8deg);
 }
 .files .cards .card .card-head .head-details p {
   color: black !important;
@@ -2120,6 +2231,152 @@
   margin-left: 5px;
 }
 
+.page {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.test input:focus {
+  outline: none;
+}
+.test p {
+  color: #777;
+}
+.test .title h3 {
+  font-weight: bold;
+  font-size: 35px;
+}
+.test .title p {
+  font-size: 20px;
+}
+
+.test .card {
+  padding-bottom: 15px !important;
+}
+.test .card.card-1::after, .test .card.card-9::after, .test .card.card-10::after {
+  content: "Vip";
+  position: absolute;
+  bottom: 100px;
+  right: 30px;
+  color: #f44336;
+  font-size: 55px;
+  font-weight: bold;
+  filter: opacity(10%);
+}
+.test .card .card-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+.test .card .card-head::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2px;
+  background-color: #eee;
+  bottom: 0px;
+  left: 0px;
+}
+.test .card .card-head .head-icons {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.test .card .card-head .head-icons i {
+  background-color: #eee;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 3px;
+  color: #777;
+}
+.test .card .card-head .details {
+  margin-top: 20px;
+}
+.test .card .card-head .details img {
+  border-radius: 50%;
+  width: 140px;
+}
+.test .card .card-head .details h4 {
+  margin-top: 20px;
+  font-weight: bold !important;
+  margin-bottom: 5px;
+}
+.test .card .card-head .details p {
+  font-size: 20px;
+  margin: 0px;
+}
+.test .card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  row-gap: 10px;
+  padding-bottom: 15px;
+  padding-left: 3px;
+}
+.test .card .card-body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2px;
+  background-color: #eee;
+  bottom: 0px;
+  left: 0px;
+}
+.test .card .card-body .box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.test .card .card-body .box i {
+  font-size: 20px;
+  color: black;
+}
+.test .card .card-body .box p {
+  padding: 0px;
+  margin: 0px;
+  color: black !important;
+  font-size: 20px !important;
+}
+.test .card .card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+.test .card .card-foot .left {
+  font-size: 18px;
+  padding-left: 3px;
+}
+.test .card .card-foot .left p {
+  transform: translateY(7px);
+}
+.test .card .card-foot .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test .card .card-foot .right .button-form {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.test .card .card-foot .right .button-form button {
+  padding: 3px 10px !important;
+  font-size: 18px;
+  margin: 0px !important;
+}
+.test .card .card-foot .right .button-form button:nth-child(1) {
+  margin-right: 5px !important;
+}
+
 .designed-title {
   position: relative;
 }
@@ -2146,18 +2403,14 @@
   bottom: 10px;
 }
 
-.container-fluid {
-  width: 87% !important;
-  transform: translateX(7%);
+.card {
+  border: none !important;
+  background-color: white !important;
+  border-radius: 10px !important;
 }
-.container-fluid .card {
-  border: none;
-  background-color: white;
-  border-radius: 10px;
-}
-.container-fluid .card .btn {
-  float: right;
-  margin-right: 20px;
+.card .btn {
+  float: right !important;
+  margin-right: 20px !important;
 }
 
 .offcanva li {
@@ -2165,8 +2418,4 @@
 }
 .offcanva li.active {
   background-color: #f7f7f7;
-}
-
-.row {
-  margin-right: 0px !important;
 }/*# sourceMappingURL=main.css.map */

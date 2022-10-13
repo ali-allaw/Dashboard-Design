@@ -29,6 +29,7 @@
                 row-gap: 10px;
                 transform: translateY(30%);
                 position: relative;
+                
                 &::after {
                     content: "";
                     position: absolute;
@@ -37,6 +38,9 @@
                     background-color: #ccc;
                     top: -20px;
                     right: 0px;
+                    @media (max-width: 1199px) {
+                        display: none;
+                    }
                 }
                 img {
                     width: 150px;
@@ -79,6 +83,11 @@
                 }
             }
             .boxes {
+                @media (max-width: 1200px) {
+                    .box {
+                        margin: 80px auto !important;
+                    }
+                }
                 padding-bottom: 40px;
                 position: relative;
                 
@@ -89,6 +98,11 @@
                             justify-content: center;
                             align-items: center;
                             column-gap: 50px;
+                            @media (max-width: 1120px) {
+                                .texts {
+                                    display: block;
+                                }
+                            }
                         }
                     }
                     width: 80%;
@@ -133,6 +147,9 @@
     .cards-2 {
         .card-2 {
             .boxes {
+                @media (max-width: 1199px) {
+                    align-items: center;
+                }
                 margin-top: 35px;
                 display: flex;
                 justify-content: center;
@@ -166,6 +183,11 @@
         .card-3 {
             .boxes {
                 .box {
+                    @media (max-width: 1199px) {
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                    }
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
@@ -187,6 +209,11 @@
                         justify-content: space-between;
                         align-items: flex-start;
                         column-gap: 15px;
+                        @media (max-width: 1199px) {
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                        }
                         .details {
                             p {
                                 margin: 0px;
@@ -209,6 +236,9 @@
                         justify-content: center;
                         align-items: flex-end;
                         flex-direction: column;
+                        @media (max-width: 1199px) {
+                            align-items: center;
+                        }
                         p {
                             font-size: 22px;   
                         }

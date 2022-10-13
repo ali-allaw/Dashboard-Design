@@ -48,7 +48,12 @@ $yellow-color: #f59e0b;
                     margin-top: 15px;
                     row-gap: 20px;
                     img {
+                        transition: .3s;
+
                         width: 90px;
+                        &:hover {
+                            transform: rotate(8deg);
+                        }
                     }
                     p {
                         color: black !important;

@@ -1,45 +1,32 @@
 $text-color: #777;
-
 .navbar {
-    position: relative;
-    height: 15px;
-    
-    .container-fluid {
-        margin: 10px auto;
-        // position: fixed;        
-            // top: 40px;
-            // left: 50%;
-            // right: 50%;
-            // transform: translateX(-50%);
-            // z-index: 100;
-            // width: 100%;
-            // width: 87% !important;
-            // transform: translateX(7%);
-    }
+    width: 100%;
+    top: 20px;
+    right: 10px;
     .left {
-        position: relative;
         i {
-            top: -5%;
+            top: 5px;
             left: 45px;
             position: absolute;
             transform: translate(50%, 50%);
             color: $text-color;
         }
-    }
-    input {
-        border-radius: 10px;
-        caret-color: $text-color;
-        border: 1px solid #ccc;
-        width: 180px;
-        margin-left: 40px;
-        &::placeholder {
-            color: $text-color;
-            padding: 10px;
+        input {
+            border-radius: 10px;
+            caret-color: $text-color;
+            border: 1px solid #ccc;
+            width: 180px;
+            margin-left: 40px;
+            &::placeholder {
+                color: $text-color;
+                padding: 10px;
+            }
+            &:focus {
+                outline: none;
+            }
         }
-        &:focus {
-            outline: none;
-        }
     }
+    
     .right {
         display: flex;
         justify-content: center;
